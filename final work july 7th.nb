@@ -1,0 +1,154 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4807,        144]
+NotebookOptionsPosition[      4169,        127]
+NotebookOutlinePosition[      4575,        143]
+CellTagsIndexPosition[      4532,        140]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Testing", " ", "if", " ", 
+    RowBox[{"K", "'"}], "s", " ", "are", " ", "equal", " ", "to", " ", "each",
+     " ", "other"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "kphi", " ", "from", " ", "equation", " ", "of", " ", "motion", " ", 
+    RowBox[{"(", "exdot", ")"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"kphi", "[", "x", "]"}], "=", 
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"nx", "[", "x", "]"}], " ", 
+      RowBox[{
+       SuperscriptBox["ex", "\[Prime]",
+        MultilineFunction->None], "[", "x", "]"}]}], 
+     RowBox[{"2", " ", 
+      SqrtBox[
+       RowBox[{"ex", "[", "x", "]"}]], " ", 
+      RowBox[{"np", "[", "x", "]"}]}]]}]}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"kphi", " ", "from", " ", "berglund", " ", "notes"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    SubscriptBox["k", "\[Phi]\[Phi]"], " ", "may", " ", "be", " ", 
+    SubscriptBox["K", "11"]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["K", "\[Phi]"], "=", 
+  FractionBox[
+   SubscriptBox["K", "\[Phi]\[Phi]"], 
+   SqrtBox[
+    RowBox[{"ex", "[", "x", "]"}]]]}]}], "Input",
+ CellChangeTimes->{{3.992437666435934*^9, 3.99243791639237*^9}, {
+  3.9924381446619887`*^9, 
+  3.99243814678576*^9}},ExpressionUUID->"6de60ed7-09f4-4bd8-9db6-\
+950cd6b4760a"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"kx", " ", "from", " ", "berglund", " ", "notes"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.992437666435934*^9, 3.99243791639237*^9}, {
+  3.9924381446619887`*^9, 
+  3.9924381530670767`*^9}},ExpressionUUID->"e6c163b0-e596-4f9c-aa4b-\
+7cc9580a2cb2"],
+
+Cell[BoxData[
+ RowBox[{"kx", "=", 
+  FractionBox[
+   RowBox[{
+    SubscriptBox["K", "xx"], "*", 
+    SqrtBox[
+     RowBox[{"ex", "[", "x", "]"}]]}], 
+   RowBox[{"ephi", "[", "x", "]"}]]}]], "Input",
+ CellChangeTimes->{{3.992437666435934*^9, 3.9924379566129503`*^9}, {
+   3.99243808591391*^9, 3.992438124364889*^9}, 
+   3.992438163713169*^9},ExpressionUUID->"f90fa19f-0bf0-4d14-bd75-\
+50d1a6a81212"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"kx", " ", "from", " ", "equation", " ", "of", " ", "motion"}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"kx", "[", "x", "]"}], "=", 
+   FractionBox[
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       SqrtBox[
+        RowBox[{"ex", "[", "x", "]"}]]}], " ", 
+      RowBox[{"nx", "[", "x", "]"}], " ", 
+      RowBox[{
+       SuperscriptBox["ephi", "\[Prime]",
+        MultilineFunction->None], "[", "x", "]"}]}], "+", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"ephi", "[", "x", "]"}], " ", 
+       RowBox[{"nx", "[", "x", "]"}], " ", 
+       RowBox[{
+        SuperscriptBox["ex", "\[Prime]",
+         MultilineFunction->None], "[", "x", "]"}]}], 
+      RowBox[{"2", " ", 
+       SqrtBox[
+        RowBox[{"ex", "[", "x", "]"}]]}]], "-", 
+     RowBox[{
+      RowBox[{"ephi", "[", "x", "]"}], " ", 
+      SqrtBox[
+       RowBox[{"ex", "[", "x", "]"}]], " ", 
+      RowBox[{
+       SuperscriptBox["nx", "\[Prime]",
+        MultilineFunction->None], "[", "x", "]"}]}]}], 
+    RowBox[{"2", " ", 
+     RowBox[{"ex", "[", "x", "]"}], " ", 
+     RowBox[{"np", "[", "x", "]"}]}]]}]}]], "Input",
+ CellChangeTimes->{{3.992437666435934*^9, 3.9924379566129503`*^9}, {
+   3.99243808591391*^9, 3.992438124364889*^9}, 3.992438163713169*^9, {
+   3.9924382495853434`*^9, 
+   3.9924382541422234`*^9}},ExpressionUUID->"d73a1a88-570f-417a-8429-\
+2cb327870699"]
+},
+WindowSize->{651.75, 728.25},
+WindowMargins->{{Automatic, 132}, {-1.5, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"440c68f2-08ea-4b4a-a3e0-6428ca9558a4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1498, 41, 198, "Input",ExpressionUUID->"6de60ed7-09f4-4bd8-9db6-950cd6b4760a"],
+Cell[2059, 63, 287, 6, 28, "Input",ExpressionUUID->"e6c163b0-e596-4f9c-aa4b-7cc9580a2cb2"],
+Cell[2349, 71, 398, 11, 53, "Input",ExpressionUUID->"f90fa19f-0bf0-4d14-bd75-50d1a6a81212"],
+Cell[2750, 84, 1415, 41, 82, "Input",ExpressionUUID->"d73a1a88-570f-417a-8429-2cb327870699"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
